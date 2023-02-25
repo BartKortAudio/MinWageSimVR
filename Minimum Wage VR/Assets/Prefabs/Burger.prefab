@@ -134,8 +134,8 @@ MonoBehaviour:
   cookLvl: 0
   isCooking: 0
   cookingProg: 0
-  cookDuration: 50
-  burntDuration: 100
+  cookDuration: 10
+  burntDuration: 15
   burntIndicator: 0
   audioClip: {fileID: -6676058003435081927}
   audioBurn: {fileID: -7159611111205486955}

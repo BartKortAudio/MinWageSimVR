@@ -8,8 +8,8 @@ public class Burger : MonoBehaviour
     public float cookLvl;
 	public bool isCooking;
 	public int cookingProg = 0;
-	public float cookDuration = 50f;
-	public float burntDuration = 100f;
+	public float cookDuration;
+	public float burntDuration;
 	public float burntIndicator;
 	
 	public AudioSource audioClip;
@@ -34,7 +34,8 @@ public class Burger : MonoBehaviour
     {
         if (isCooking == true && cookingProg != 3)
 		{
-			cookLvl += 0.01f;
+			cookLvl += 1.0f * Time.deltaTime;
+			Debug.Log(cookLvl);
 			
 			if (cookingProg == 0 && cookLvl >= cookDuration){
 				BurgerReady();
