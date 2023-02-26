@@ -11,7 +11,7 @@ public class radio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        music.Play();
+        //music.Play();
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class radio : MonoBehaviour
       
     }
 	
-	void OnCollisionEnter(Collision col)
+	/*void OnCollisionEnter(Collision col)
 	{
 		if (isPlaying == false){
 			music.Play();
@@ -30,4 +30,17 @@ public class radio : MonoBehaviour
 			isPlaying = false;
 		}
 	}
+	*/
+	
+	public void turnOnOff()
+	{
+		if (isPlaying == false){
+			music.Play();
+			isPlaying = true;
+		}else {
+			music.Stop();
+			isPlaying = false;
+		}
+	}
+	
 }

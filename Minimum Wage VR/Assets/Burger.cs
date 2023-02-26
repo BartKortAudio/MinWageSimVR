@@ -50,7 +50,7 @@ public class Burger : MonoBehaviour
 		}
     }
 	
-	void OnCollisionEnter(Collision col)
+	void OnTriggerEnter(Collider col)
 	{
 		if (col.gameObject.tag == "HotTag" && cookingProg < 3)
 		{
@@ -64,7 +64,7 @@ public class Burger : MonoBehaviour
 			}
 	}
 	
-	void OnCollisionExit(Collision col)
+	void OnTriggerExit(Collider col)
 	{
 		if (col.gameObject.tag == "HotTag")
 		{
