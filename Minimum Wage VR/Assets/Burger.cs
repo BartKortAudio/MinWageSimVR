@@ -59,7 +59,7 @@ public class Burger : MonoBehaviour
 			audioClip.Play();
 			Debug.Log("It's getting hot in here");
 		}
-		if (cookingProg >= 2){
+		if (col.gameObject.tag == "HotTag" && cookingProg >= 2){
 				bsmokeObject.SetActive(true);
 			}
 	}
