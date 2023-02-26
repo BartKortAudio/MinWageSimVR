@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7787526343679829441}
   - component: {fileID: 7787526343679829442}
   - component: {fileID: 7787526343679829443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 7787526343704708385}
   - component: {fileID: 7787526343704708386}
   - component: {fileID: 7787526343704708387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 7787526344284157564}
   - component: {fileID: 7787526344284157565}
   - component: {fileID: 7787526344284157566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Antenna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 7787526344848865292}
   - component: {fileID: 7787526344848865293}
   - component: {fileID: 7787526344848865294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1194083963}
   - component: {fileID: 1194083962}
   - component: {fileID: 4662546946004149932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Radio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
