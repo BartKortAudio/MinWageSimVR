@@ -66,11 +66,14 @@ public class Burger : MonoBehaviour
 	
 	void OnTriggerExit(Collider col)
 	{
+		if (col.gameObject.tag == "HotTag")
+		{
 		isCooking = false;
 		smokeObject.SetActive(false);
 		bsmokeObject.SetActive(false);
 		audioClip.Stop();
 		Debug.Log("Cooling down!");
+		}
 	}
 	
 	void BurgerReady()
