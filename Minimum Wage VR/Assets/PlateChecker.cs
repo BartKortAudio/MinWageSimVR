@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlateChecker : MonoBehaviour
 {
-   public int hasBunBot;
+    public int hasBunBot;
 	public int hasBunTop;
 	public int hasBurger;
 	public int hasCheese;
 	public int hasLettuce;
 	public int hasTomato;
+	
+	public GameObject foodKiller;
  
  
 	private void OnTriggerEnter (Collider other) {
@@ -20,6 +22,8 @@ public class PlateChecker : MonoBehaviour
 				if (randomOrder.bunBotReq == hasBunBot && randomOrder.bunTopReq == hasBunTop && randomOrder.burgerReq == hasBurger && randomOrder.cheeseReq == hasCheese && randomOrder.lettuceReq == hasLettuce && randomOrder.tomatoReq == hasTomato) {
 				Debug.Log("Bliksem wat lekker omnomnom");
 				randomOrder.WaitForNewOrder();
+				foodKiller.SetActive(true);
+				foodKiller.SetActive(false);
 				}else {
 				Debug.Log("Dit is niet mijn bestelling, ik wil de manager spreken!");
 				} 
