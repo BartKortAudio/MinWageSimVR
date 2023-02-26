@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7239709662808019023}
   - component: {fileID: 2849338522657666709}
   - component: {fileID: 1723781100594054045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlateBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ Rigidbody:
   m_GameObject: {fileID: 2789023132876056669}
   serializedVersion: 2
   m_Mass: 0.2
-  m_Drag: 1
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -261,6 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6796920528227721033}
   - component: {fileID: 8067668237170648068}
+  - component: {fileID: 775448630}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -297,6 +298,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.3, z: 0.35}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &775448630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564255989577975267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777780630ff3ed1479241c4ab65546c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBunBot: 0
+  hasBunTop: 0
+  hasBurger: 0
+  hasCheese: 0
+  hasLettuce: 0
+  hasTomato: 0
+  foodKiller: {fileID: 8009227576627072569}
 --- !u!1 &8009227576627072569
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2231938020658031442
 Transform:
   m_ObjectHideFlags: 0

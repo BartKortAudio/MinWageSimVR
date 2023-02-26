@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FoodKiller : MonoBehaviour
 {
-    // Start is called before the first frame update
+	
+	// Start is called before the first frame update
     void Start()
     {
         
@@ -13,7 +14,6 @@ public class FoodKiller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 	
 	void OnTriggerEnter(Collider col)

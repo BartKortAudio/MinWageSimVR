@@ -35,7 +35,7 @@ public class Burger : MonoBehaviour
         if (isCooking == true && cookingProg != 3)
 		{
 			cookLvl += 1.0f * Time.deltaTime;
-			Debug.Log(cookLvl);
+			//Debug.Log(cookLvl);
 			
 			if (cookingProg == 0 && cookLvl >= cookDuration){
 				BurgerReady();

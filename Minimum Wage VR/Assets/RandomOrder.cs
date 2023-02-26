@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class RandomOrder : MonoBehaviour
 {
@@ -14,6 +16,13 @@ public class RandomOrder : MonoBehaviour
 	
 	public bool timeStart = false;
 	public float timeLeft = 30.0f;
+	
+	public GameObject textSign;
+	
+	public TMP_Text burgerTxt;
+	public TMP_Text cheeseTxt;
+	public TMP_Text lettuceTxt;
+	public TMP_Text tomatoTxt;
 	
     // Start is called before the first frame update
     void Start()
@@ -77,11 +86,19 @@ public class RandomOrder : MonoBehaviour
 				tomatoReq = Random.Range(1, 3);
 			}
 		
+		textSign.SetActive(true);	
+		burgerTxt.text = "Burger  x  " + burgerReq;
+		cheeseTxt.text = "Cheese  x  " + cheeseReq;
+		lettuceTxt.text = "Lettuce  x  " + lettuceReq;
+		tomatoTxt.text = "Tomato  x  " + tomatoReq;
+		
 	}
 	
 	//Reset order en begint timer
 	public void WaitForNewOrder()
 	{
+		
+	textSign.SetActive(false);
 		
 	burgerReq = 0;
 	cheeseReq = 0;
@@ -97,3 +114,4 @@ public class RandomOrder : MonoBehaviour
 	}
 	
 }
+
