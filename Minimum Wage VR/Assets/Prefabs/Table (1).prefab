@@ -208,8 +208,9 @@ GameObject:
   - component: {fileID: 319764798797940403}
   - component: {fileID: 247871149174851779}
   - component: {fileID: 3500894659381462683}
+  - component: {fileID: 5926775734674325462}
   m_Layer: 9
-  m_Name: Cube
+  m_Name: Tablo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,3 +294,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000005, y: 0.9999999, z: 1.0000005}
   m_Center: {x: 0.0000002384187, y: 0.00000005960464, z: 0.0000009536748}
+--- !u!114 &5926775734674325462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4509601550692806878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dda7e25e1851ed4f8bd6bf52ca8f36b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burgerReq: 0
+  cheeseReq: 0
+  lettuceReq: 0
+  tomatoReq: 0
+  bunBotReq: 1
+  bunTopReq: 1

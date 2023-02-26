@@ -19,15 +19,15 @@ public class PlateChecker : MonoBehaviour
 			if (other.transform.TryGetComponent(out RandomOrder randomOrder)){
 				if (randomOrder.bunBotReq == hasBunBot && randomOrder.bunTopReq == hasBunTop && randomOrder.burgerReq == hasBurger && randomOrder.cheeseReq == hasCheese && randomOrder.lettuceReq == hasLettuce && randomOrder.tomatoReq == hasTomato) {
 				Debug.Log("Bliksem wat lekker omnomnom");
-				//randomOrder.WaitForNewOrder();
+				randomOrder.WaitForNewOrder();
 				}else {
 				Debug.Log("Dit is niet mijn bestelling, ik wil de manager spreken!");
 				} 
 			}
 		}
 		
-		if (other.gameObject.name == "Bun_Bottom"){hasBunBot += 1;}
-		if (other.gameObject.name == "Bun_Top"){hasBunTop += 1;}
+		if (other.gameObject.name == "BunBottom"){hasBunBot += 1;}
+		if (other.gameObject.name == "BunTop"){hasBunTop += 1;}
 		if (other.gameObject.name == "Burger"){
 			if (other.transform.TryGetComponent(out Burger burger)){
 			if (burger.cookingProg >0 && burger.cookingProg < 3){
@@ -40,8 +40,8 @@ public class PlateChecker : MonoBehaviour
 	}
 	
     private void OnTriggerExit (Collider other) {
-        if (other.gameObject.name == "Bun_Bottom"){hasBunBot -= 1;}
-		if (other.gameObject.name == "Bun_Top"){hasBunTop -= 1;}
+        if (other.gameObject.name == "BunBottom"){hasBunBot -= 1;}
+		if (other.gameObject.name == "BunTop"){hasBunTop -= 1;}
 		if (other.gameObject.name == "Burger"){
 			if (other.transform.TryGetComponent(out Burger burger)){
 			if (burger.cookingProg >0 && burger.cookingProg < 3){
