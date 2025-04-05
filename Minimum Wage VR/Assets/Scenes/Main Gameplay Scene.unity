@@ -475,6 +475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guest
       objectReference: {fileID: 0}
+    - target: {fileID: 4417554197055296657, guid: e9e9c9cd51f433847afbaca6e0ae8b06,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9e9c9cd51f433847afbaca6e0ae8b06, type: 3}
 --- !u!1001 &65618647
@@ -3990,7 +3995,7 @@ PrefabInstance:
     - target: {fileID: 597548264113392168, guid: b9a257fb94dcaba429c03df667562a43,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.018400013
+      value: 0.215
       objectReference: {fileID: 0}
     - target: {fileID: 597548264113392168, guid: b9a257fb94dcaba429c03df667562a43,
         type: 3}
@@ -5673,6 +5678,7 @@ GameObject:
   - component: {fileID: 1014897904}
   - component: {fileID: 1014897905}
   - component: {fileID: 1014897906}
+  - component: {fileID: 1014897907}
   m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
@@ -5916,6 +5922,22 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &1014897907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014897896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b00907fb7969574ca52a4c22904ac46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 1014897899}
+  head: {fileID: 748135530}
+  leftHand: {fileID: 1614966230}
+  rightHand: {fileID: 98783431}
 --- !u!1001 &1027468153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6945,7 +6967,7 @@ MonoBehaviour:
   ConnectionData:
     Address: 127.0.0.1
     Port: 7777
-    ServerListenAddress: 
+    ServerListenAddress: 0.0.0.0
   DebugSimulator:
     PacketDelayMS: 0
     PacketJitterMS: 0
@@ -11435,7 +11457,7 @@ PrefabInstance:
     - target: {fileID: 2121792225144638019, guid: 1507a202651a1de43b1ab0ee8db6e5a5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.74
+      value: 0.922
       objectReference: {fileID: 0}
     - target: {fileID: 2121792225144638019, guid: 1507a202651a1de43b1ab0ee8db6e5a5,
         type: 3}
