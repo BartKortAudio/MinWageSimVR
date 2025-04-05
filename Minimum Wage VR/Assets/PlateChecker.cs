@@ -12,7 +12,7 @@ public class PlateChecker : MonoBehaviour
 	public int hasTomato;
 	
 	public bool timeStart = false;
-	public float timeLeft = 0.1f;
+	public float timeLeft = 3.0f;
 	
 	public GameObject foodKiller;
  

@@ -17,6 +17,9 @@ public class RandomOrder : MonoBehaviour
 	public bool timeStart = false;
 	public float timeLeft = 30.0f;
 	
+	//private AudioSource audioSource;
+	//public AudioClip chewSfx;
+	
 	public GameObject textSign;
 	
 	public TMP_Text burgerTxt;
@@ -29,7 +32,7 @@ public class RandomOrder : MonoBehaviour
     {
 		
 		CreateRandomOrder();
-
+		//audioSource.clip = chewSfx;
 		
     }
 	
@@ -99,6 +102,8 @@ public class RandomOrder : MonoBehaviour
 	{
 		
 	textSign.SetActive(false);
+	
+	//audioSource.Play();
 		
 	burgerReq = 0;
 	cheeseReq = 0;
