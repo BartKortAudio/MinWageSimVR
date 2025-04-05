@@ -1,0 +1,80 @@
+# --- UNITY DEFAULT ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+Assets/StreamingAssets/aa.meta
+Assets/StreamingAssets/aa/*
+
+# --- PACKAGE CACHE (Sometimes sneaks through) ---
+Library/PackageCache/
+Library/PackageManager/
+
+# --- IGNORE EXPORTED FILES & PLUGINS ---
+ExportedObj/
+Assets/AssetStoreTools*
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- VISUAL STUDIO / IDE FILES ---
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# --- CRASH/DEBUG/LOG ---
+sysinfo.txt
+*.log
+*.stacktrace
+
+# --- UNITY PACKAGE FILES ---
+*.unitypackage
+*.unitypackage.meta
+
+# --- BUILDS ---
+*.apk
+*.aab
+*.app
+*.exe
+*.ipa
+*.xcodeproj
+*.xcworkspace
+
+# --- ADDRESSABLES BUILD ARTIFACTS ---
+Assets/AddressableAssetsData/*/*.bin*
+Assets/AddressableAssetsData/*/*.link*
+
+# --- VS CODE ---
+.vscode/
+
+# --- RIDER ---
+.idea/
+*.sln.iml
+
+# --- GIT FILES ---
+*.orig
+
+# --- TEMP FILES ---
+*.bak
+*.swp
+*.tmp
+~$*
