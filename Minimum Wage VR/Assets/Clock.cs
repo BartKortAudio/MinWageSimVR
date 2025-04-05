@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Clock : MonoBehaviour
 {
-    public float TimeLeft;
+    public float TimeTotal;
+	public float TimeLeft;
 	public bool TimerOn = false;
+	public GameObject wijzer;
 	
 	// Start is called before the first frame update
     void Start()
     {
-        
+		TimeLeft = TimeTotal;
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Clock : MonoBehaviour
 			if(TimeLeft > 0)
 			{
 				TimeLeft -= Time.deltaTime;
+				wijzer.transform.Rotate
 			} else {
 				Debug.Log("Time is up!");
 				TimeLeft = 0;
@@ -32,6 +35,12 @@ public class Clock : MonoBehaviour
 	void ClockActive(){
 		TimerOn = true;
 	}
+	
+	void updateClock()
+	{
+		
+	}
+	
 	
 	void updateTimer(float currentTime)
 	{
