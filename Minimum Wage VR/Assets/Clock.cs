@@ -8,11 +8,17 @@ public class Clock : MonoBehaviour
 	public float TimeLeft;
 	public bool TimerOn = false;
 	public GameObject wijzer;
+	private float wVar;
+	
+	private AudioSource audioSource;
+	public AudioClip clockStart;
+	public AudioClip clockEnd;
 	
 	// Start is called before the first frame update
     void Start()
     {
 		TimeLeft = TimeTotal;
+		audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,30 +29,19 @@ public class Clock : MonoBehaviour
 			if(TimeLeft > 0)
 			{
 				TimeLeft -= Time.deltaTime;
-				wijzer.transform.Rotate
+				wVar = TimeLeft/TimeTotal*360;
+				wijzer.transform.eulerAngles = new Vector3(wijzer.transform.eulerAngles.x, wijzer.transform.eulerAngles.y, -wVar);
 			} else {
 				Debug.Log("Time is up!");
 				TimeLeft = 0;
+				if(TimerOn == true){audioSource.clip = clockEnd; audioSource.Play();}
 				TimerOn = false;
 			}
 		}
     }
 	
-	void ClockActive(){
+	public void ClockActive(){
+		if(TimerOn == false){audioSource.clip = clockStart; audioSource.Play();}
 		TimerOn = true;
-	}
-	
-	void updateClock()
-	{
-		
-	}
-	
-	
-	void updateTimer(float currentTime)
-	{
-		currentTime += 1;
-		
-		float minutes = Mathf.FloorToInt(currentTime / 60);
-		float seconds = Mathf.FloorToInt(currentTime % 60);
 	}
 }
