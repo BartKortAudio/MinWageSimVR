@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 3671776510791873930}
   m_Layer: 9
   m_Name: Burger
-  m_TagString: Ingredient
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -524,11 +524,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5837302511259373507}
     m_Modifications:
-    - target: {fileID: 2658598313804536902, guid: b99c5d70e4616854ebd19060eb74b812,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3180307867389109919, guid: b99c5d70e4616854ebd19060eb74b812,
         type: 3}
       propertyPath: m_RootOrder
@@ -663,11 +658,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8054670003650236226, guid: 38cdac0913097974f8a4525b2dedc0a1,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8252646687302455825, guid: 38cdac0913097974f8a4525b2dedc0a1,
         type: 3}
