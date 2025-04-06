@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 4627483405644268640}
   - component: {fileID: 2722326718701997483}
   - component: {fileID: 6184800686373072529}
+  - component: {fileID: 8314138003643038598}
   m_Layer: 9
   m_Name: Spatula
   m_TagString: Untagged
@@ -392,3 +393,15 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!114 &8314138003643038598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3926278162789296248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e750d8d1e8391f34499d210620f1aae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

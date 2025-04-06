@@ -7134,15 +7134,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1321380817}
-  - component: {fileID: 1321380816}
   - component: {fileID: 1321380818}
+  - component: {fileID: 1321380816}
   m_Layer: 0
   m_Name: SpatulaSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1321380816
 MonoBehaviour:
   m_ObjectHideFlags: 0
