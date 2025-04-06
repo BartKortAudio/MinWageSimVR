@@ -18,7 +18,11 @@ GameObject:
   - component: {fileID: 336576375862665403}
   m_Layer: 9
   m_Name: Buntop
+<<<<<<< HEAD
   m_TagString: Untagged
+=======
+  m_TagString: Ingredient
+>>>>>>> Gameplay-Dev
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
