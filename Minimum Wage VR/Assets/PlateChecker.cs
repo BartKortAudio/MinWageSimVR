@@ -48,31 +48,31 @@ public class PlateChecker : MonoBehaviour
 			}
 		}
 		
-		if (other.gameObject.name == "BunBottom"){hasBunBot += 1;}
-		if (other.gameObject.name == "BunTop"){hasBunTop += 1;}
-		if (other.gameObject.name == "Burger"){
+		if (other.gameObject.name.Contains("Bunbottom")){hasBunBot += 1;}
+		if (other.gameObject.name.Contains("Buntop")){hasBunTop += 1;}
+		if (other.gameObject.name.Contains("Burger")){
 			if (other.transform.TryGetComponent(out Burger burger)){
 			if (burger.cookingProg >0 && burger.cookingProg < 3){
 			hasBurger += 1;}
 			}
 		}
-		if (other.gameObject.name == "Cheese"){hasCheese += 1;}
-		if (other.gameObject.name == "Lettuce"){hasLettuce += 1;}
-		if (other.gameObject.name == "Tomato"){hasTomato += 1;}
+		if (other.gameObject.name.Contains("Cheese")){hasCheese += 1;}
+		if (other.gameObject.name.Contains("Lettuce")){hasLettuce += 1;}
+		if (other.gameObject.name.Contains("Tomato")){hasTomato += 1;}
 	}
 	
     private void OnTriggerExit (Collider other) {
-        if (other.gameObject.name == "BunBottom"){hasBunBot -= 1;}
-		if (other.gameObject.name == "BunTop"){hasBunTop -= 1;}
-		if (other.gameObject.name == "Burger"){
+        if (other.gameObject.name.Contains("Bunbottom")){hasBunBot -= 1;}
+		if (other.gameObject.name.Contains("Buntop")){hasBunTop -= 1;}
+		if (other.gameObject.name.Contains("Burger")){
 			if (other.transform.TryGetComponent(out Burger burger)){
 			if (burger.cookingProg >0 && burger.cookingProg < 3){
 			hasBurger -= 1;}
 			}
 		}
-		if (other.gameObject.name == "Cheese"){hasCheese -= 1;}
-		if (other.gameObject.name == "Lettuce"){hasLettuce -= 1;}
-		if (other.gameObject.name == "Tomato"){hasTomato -= 1;}
+		if (other.gameObject.name.Contains("Cheese")){hasCheese -= 1;}
+		if (other.gameObject.name.Contains("Lettuce")){hasLettuce -= 1;}
+		if (other.gameObject.name.Contains("Tomato")){hasTomato -= 1;}
     }
 	
 	void KillKiller()

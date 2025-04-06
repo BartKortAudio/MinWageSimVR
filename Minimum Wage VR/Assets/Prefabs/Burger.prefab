@@ -17,10 +17,9 @@ GameObject:
   - component: {fileID: -6676058003435081927}
   - component: {fileID: -7159611111205486955}
   - component: {fileID: 7412044961588362969}
-  - component: {fileID: -5552165713280333467}
   m_Layer: 9
   m_Name: Burger
-  m_TagString: Untagged
+  m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,19 +473,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &-5552165713280333467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5837302511259373516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19cc5927af284d74da7ad45b0091196b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impactSfx: {fileID: 8300000, guid: 961c7e0da3f63144390382e0a267c886, type: 3}
 --- !u!1001 &2896822576484948171
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1091,7 +1091,6 @@ MonoBehaviour:
   bunTopReq: 1
   timeStart: 0
   timeLeft: 30
-  chewSfx: {fileID: 8300000, guid: 308013b4731ab944990fdc7cfbdee766, type: 3}
   textSign: {fileID: 16905770}
   burgerTxt: {fileID: 1918994144}
   cheeseTxt: {fileID: 1555511432}
